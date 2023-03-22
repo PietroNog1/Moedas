@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Coversor de Moedas Imersão Dev Alura-02</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="pr-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <a href="https://alura.com.br/" target="_blank"> <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo"></a>
+  <div id='calc'>
+    <div id='header'>
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+      <h1>Conversor de Moeda</h1>
+      <p>Aula 1</p>
+    </div>
+    <div>
+      <form onsubmit="getMoeda()" method="dialog">
+        <div id='selec'>Você precisa selecionar as moedas</div>
+        <div>
+          <input for='de' value="1" id='moedainput' type="number" name="curreny" step=".0000001" required>
+          <select name="moeda" id="de" onchange="changeMoeda()">
+            <option value="select" selected>Selecione</option>
+            <option value="USD">Dólar Americano</option>
+            <option value="BRL">Real Brasileiro</option>
+            <option value="EUR">EUR</option>
+            <option value="BTC">Bitcoin</option>
+          </select>
+        </div>
+        <div>
+          <span id='spanpara'>para</span>
+          <select name="moeda" id="para" onchange="changeMoeda()">
+            <option value="select" selected>Selecione</option>
+            <option value="USD">Dólar Americano</option>
+            <option value="BRL">Real Brasileiro</option>
+            <option value="EUR">Euro</option>
+            <option value="BTC">Bitcoin</option>
+          </select>
+        </div>
+        <input type="submit" value="Calcular" id='calcular'>
+      </form>
+    </div>
+    <div id='res'>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
